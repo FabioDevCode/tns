@@ -1,43 +1,310 @@
 <!DOCTYPE html>
-<html lang="fr"  data-theme="cmyk">
+<html lang="fr" data-theme="cmyk">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="./favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link href="/public/fontawesome/css/all.min.css" rel="stylesheet" />
-    <link href="/public/css/daisyui.min.css" rel="stylesheet">
+    <link href="/public/css/daisyui.min.css" rel="stylesheet" />
     <script src="/public/js/tailwindcss.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="icon" href="/favicon.png">
+
     <title>Tranchant Nettoyage Service</title>
 </head>
 <body>
-    <div class="w-full h-[80px] bg-neutral text-white">
-        <div class="flex items-center justify-between max-w-6xl h-full mx-auto px-4 sm:px-4 lg:px-4">
+    <div class="w-full sticky top-0 h-[70px] bg-zinc-950 text-gray-50">
+        <div class="flex items-center justify-between max-w-6xl h-full mx-auto px-4">
             <img src="/public/img/logo_tns.png" class="h-12" alt="TNS Logo">
             <div class="flex items-center gap-4">
-                <nav class="text-xs flex gap-4">
+                <!-- <nav class="hidden lg:flex text-xs flex gap-4">
                     <a href="#">Accueil</a>
                     <a href="#">Mes services</a>
                     <a href="#">A propose</a>
                     <a href="#">Zone d'intervention</a>
                     <a href="#">Avis</a>
                     <a href="#">Contact</a>
-                </nav>
+                </nav> -->
                 <a href="tel:0650085144" class="golden-button">
                     <i class="fa-solid fa-phone"></i>
-                    06 50 08 51 44
+                    <span>
+                        06 50 08 51 44
+                    </span>
                 </a>
             </div>
         </div>
     </div>
 
+    <!-- HERO BANNER -->
+    <div id="hero" class="flex w-full py-36 min-h-max">
+        <div class="max-w-6xl h-full mx-auto px-4 flex justify-start items-center">
+            <section class="w-full flex flex-col gap-2">
+                <h1 class="uppercase text-sm text-zinc-700 font-bold">
+                    Entreprise de nettoyage
+                </h1>
+                <h2 class="text-6xl md:text-7xl mb-4 font-semibold garamond">
+                    Votre espace,<br>
+                    <span class="garamond text-gold">
+                        ma priorité
+                    </span>
+                </h2>
+                <p class="text-zinc-600 flex w-full md:w-[55%] xl:w-[41%] mb-8 md:mb-16">
+                    Je vous propose des prestations de nettoyage sur mesure pour les particuiers et les professionnels.
+                    Un service fiable réactif et de qualité, pour des espaces toujours impeccables.
+                </p>
 
-    <h1>
-        Tranchant Nettoyage Service
-    </h1>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4 md:flex md:gap-0">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-gold text-3xl"></i>
+                        <div class="flex flex-col text-xs font-semibold">
+                            <p>Devis sous 24h</p>
+                            <p>(gratuit)</p>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:flex divider divider-horizontal"></div>
+
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-leaf text-gold text-3xl"></i>
+                        <div class="flex flex-col text-xs font-semibold">
+                            <p>
+                                Produits adaptés
+                            </p>
+                            <p>
+                                à vos besoins
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:flex divider divider-horizontal"></div>
+
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-bolt-lightning text-gold text-3xl"></i>
+                        <div class="flex flex-col text-xs font-semibold">
+                            <p>
+                                Intervention rapide
+                            </p>
+                            <p>
+                                et flexible
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:flex divider divider-horizontal"></div>
+
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-calendar-days text-gold text-3xl"></i>
+                        <div class="flex flex-col text-xs font-semibold">
+                            <p>
+                                Disponible
+                            </p>
+                            <p>
+                                11h - 19h (tous les jours)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services" class="flex w-full py-28 min-h-max">
+        <div class="max-w-6xl h-full mx-auto px-4 flex justify-start items-center">
+            <section class="w-full flex flex-col items-center gap-2">
+                <h3 class="uppercase text-sm text-neutral font-bold text-gold">
+                    Mes services
+                </h3>
+                <h4 class="text-4xl text-center font-semibold mb-2 garamond">
+                    Des prestations adaptées à tous vos espaces
+                </h4>
+                <p class="text-center text-zinc-600">
+                    Que vous soyez un particulier ou un professionnel, 
+                    je vous accompagne<br> pour un intérieur propre, sain et agréable.
+                </p>
+                <div class="grid grid-cols-1 grid-rows-6 gap-4 md:grid-cols-2 md:grid-rows-3 md:gap-6 lg:grid-cols-3 lg:grid-rows-2 lg:gap-10 py-12">
+
+                    <div class="w-full overflow-hidden rounded border border-gray-100 bg-white shadow">
+                        <div class="h-[160px] w-full overflow-hidden">
+                            <img
+                                src="/public/img/c_immeuble.png"
+                                alt="Lotissements résidentiels"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h5 class="mb-3 text-md font-semibold leading-tight text-gray-900">
+                                Lotissements
+                            </h5>
+                            <p class="text-xs leading-4 text-gray-500">
+                                Entretien des parties communes,
+                                espaces extérieurs et plus encore.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-full overflow-hidden rounded border border-gray-100 bg-white shadow">
+                        <div class="h-[160px] w-full overflow-hidden">
+                            <img
+                                src="/public/img/c_bureau.png"
+                                alt="Lotissements résidentiels"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h5 class="mb-3 text-md font-semibold leading-tight text-gray-900">
+                                Bureaux
+                            </h5>
+                            <p class="text-xs leading-4 text-gray-500">
+                                Un environnement de travail propre 
+                                et sein pour plus de productivité.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-full overflow-hidden rounded border border-gray-100 bg-white shadow">
+                        <div class="h-[160px] w-full overflow-hidden">
+                            <img
+                                src="/public/img/c_sport.png"
+                                alt="Lotissements résidentiels"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h5 class="mb-3 text-md font-semibold leading-tight text-gray-900">
+                                Salles de sport
+                            </h5>
+                            <p class="text-xs leading-4 text-gray-500">
+                                Des équipements propres et 
+                                hygièniques pour vos adhérents.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-full overflow-hidden rounded border border-gray-100 bg-white shadow">
+                        <div class="h-[160px] w-full overflow-hidden">
+                            <img
+                                src="/public/img/c_airbnb.png"
+                                alt="Lotissements résidentiels"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h5 class="mb-3 text-md font-semibold leading-tight text-gray-900">
+                                Airbnb
+                            </h5>
+                            <p class="text-xs leading-4 text-gray-500">
+                                Préparation et remise en état 
+                                de vos logements entre chaque séjour.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-full overflow-hidden rounded border border-gray-100 bg-white shadow">
+                        <div class="h-[160px] w-full overflow-hidden">
+                            <img
+                                src="/public/img/c_vitrine.png"
+                                alt="Lotissements résidentiels"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h5 class="mb-3 text-md font-semibold leading-tight text-gray-900">
+                                Vitrerie (petits commerces)
+                            </h5>
+                            <p class="text-xs leading-4 text-gray-500">
+                                Des vitres nettes pour une meilleure 
+                                visibilité et une image soignée.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-full overflow-hidden rounded border border-gray-100 bg-white shadow">
+                        <div class="h-[160px] w-full overflow-hidden">
+                            <img
+                                src="/public/img/c_balai.png"
+                                alt="Lotissements résidentiels"
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+                        <div class="p-4">
+                            <h5 class="mb-3 text-md font-semibold leading-tight text-gray-900">
+                                Autres prestations
+                            </h5>
+                            <p class="text-xs leading-4 text-gray-500">
+                                Selon vos besoins :<br>
+                                remise en état, fin de chantier, 
+                                nettoyage ponctuel, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- WHY -->
+    <div id="why" class="flex items-center justify-center w-full min-h-max mb-12">
+        <div class="w-full grid grid-cols-2 grid-rows-1">
+
+            <img src="/public/img/plan.png" alt="plan de travail avec un chiffon">
+
+            <section class="flex flex-col items-start w-full gap-4 px-8 py-4">
+                <h3 class="uppercase text-sm text-neutral font-bold text-gold">
+                    Pourquoi choisir TNS ?
+                </h3>
+                <h4 class="text-4xl font-semibold mb-2 garamond">
+                    Un service de confiancce,<br>
+                    à chaque intervention
+                </h4>
+                <p class="text-zinc-600 mb-4">
+                    Je mets tout en oeuvre pour vous offrir un service de qualité,<br>
+                    avec sérieux et engagement. Mon objectif : votre satisfaction.
+                </p>
+
+                <div class="w-full grid grid-cols-2 grid-rows-2 gap-8">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-clock text-gold text-3xl"></i>
+                        <div class="flex flex-col text-xs font-semibold">
+                            <p>Réactivité garantie</p>
+                            <p>Devis sous 24h</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-person-running text-gold text-3xl"></i>
+                        <div class="flex flex-col text-xs font-semibold">
+                            <p>Flexibilité</p>
+                            <p>selon vos contraintes</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <i class="fa-brands fa-pagelines text-gold text-3xl"></i>
+                        <div class="flex flex-col text-xs font-semibold">
+                            <p>Produits adaptés</p>
+                            <p>à votre environnement</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-star text-gold text-3xl"></i>
+                        <div class="flex flex-col text-xs font-semibold">
+                            <p>Produits adaptés</p>
+                            <p>à votre environnement</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
 
 
 
