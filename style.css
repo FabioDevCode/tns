@@ -18,7 +18,7 @@
     color: #B89864 !important;
 }
 
-.text-yellow {
+.text-star {
     color: #ebac1a !important;
 }
 
@@ -87,7 +87,7 @@
         rgba(255, 255, 255, 0.8) 85%,
         rgba(255, 255, 255, 0.6) 100%
     ),
-    url('/public/img/hero.png');
+    url('./public/img/hero.png');
     background-size: cover;
     background-position: right bottom;
     background-repeat: no-repeat;
